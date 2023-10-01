@@ -1,1 +1,9 @@
 /* Nguyen, Long Quan - iqm026 - 11314875 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#timer {
+    font-size: 36px;
+}
