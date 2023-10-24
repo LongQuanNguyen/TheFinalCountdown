@@ -1,9 +1,63 @@
 /* Nguyen, Long Quan - iqm026 - 11314875 */
+
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    background-color: #39242a; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
 }
 
-#timer {
-    font-size: 36px;
+.container {
+    background-color: #ffe7ca;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    padding-top: 50%; /*Retain 1:1 aspect ratio*/
+    padding: 5%;
+    gap: 15px;
+    margin: 10%;
+}
+
+h1{
+    font-size: 4vw;
+    color: #ac8963;
+}
+
+.timer-container {
+    display: flex;
+    gap: 10%;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.timer-box {
+    /*background-color: #faa775;*/
+    border: bisque;
+    width: 15vw;
+    font-size: 4vw;
+    text-align: center;
+    animation: animate 5s ease infinite;
+}
+
+.gif {
+    width: 90%;
+    object-fit: cover; /* keep aspect ratio while scaling */
+}
+
+.message{
+    font-size: 3vw;
+    color: rgb(70, 45, 0);
+}
+
+/* Color chaning animation in timer-box*/
+@keyframes animate {
+    0%{background-color: #f3eaaf;}
+    50%{background-color: #e3b778;}
+    100%{background-color: #e7c27d;}
 }
